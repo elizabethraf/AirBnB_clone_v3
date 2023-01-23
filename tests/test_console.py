@@ -10,21 +10,6 @@ import unittest
 HBNBCommand = console.HBNBCommand
 
 
-class TestHBNBCommandDocs(unittest.TestCase):
-        """Class for testing BaseModel"""
-
-        @classmeth
-        def setUpClass(cls):
-             print('\n\n.................................')
-             print('..... Testing Documentation .....')
-             print('.......  For the Console  .......')
-             print('.................................\n\n')
-
-        def test_doc_file(self):
-            """Display document for the file"""
-            expected = '\nCommand interpreter for Holberton AirBnB project\n'
-            actual = console.__doc__
-            self.assertEqual(expected, actual)
 class TestConsoleDocs(unittest.TestCase):
     """Class for testing documentation of the console"""
     def test_pep8_conformance_console(self):
